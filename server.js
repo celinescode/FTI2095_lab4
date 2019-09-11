@@ -49,7 +49,7 @@ app.get('/newtask', function (req, res) {
 //list tasks page
 app.get('/listtasks',function(req,res){
     db.collection('task').find({}).toArray(function (err, data) {
-        res.render('listTasks', { tasks: data });   
+        res.render('listtasks', { tasks: data });   
     });
 });
 
